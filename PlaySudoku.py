@@ -117,7 +117,6 @@ def main():
 
 	newFullSudoku = SM.makeNewFullSudoku()
 	contract_instance.setSolutionGrid(newFullSudoku.table, transact={'from': w3.eth.accounts[0]})
-	newFullSudoku.showGrid()
 	
 	newTaskSudoku = SM.makeNewTaskSudoku(newFullSudoku)
 	contract_instance.setCurrentGrid(newTaskSudoku.table, transact={'from': w3.eth.accounts[0]})
